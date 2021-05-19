@@ -238,6 +238,7 @@ export default {
                   {
                     class: 'vc-pane-layout',
                     style: {
+                      '-ms-grid-columns': `(1fr)[${this.columns}]`, // for IE11
                       gridTemplateColumns: `repeat(${this.columns}, 1fr)`,
                     },
                     attrs: {
