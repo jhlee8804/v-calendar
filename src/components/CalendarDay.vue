@@ -528,23 +528,23 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--text-sm);
-  font-weight: var(--font-medium);
+  font-size: 14px;
+  font-weight: 500;
   width: 28px;
   height: 28px;
   line-height: 28px;
-  border-radius: var(--rounded-full);
+  border-radius: 9999px;
   user-select: none;
   cursor: pointer;
   &:hover {
     background-color: hsla(211, 25%, 84%, 0.3);
   }
   &:focus {
-    font-weight: var(--font-bold);
+    font-weight: 700;
     background-color: hsla(211, 25%, 84%, 0.4);
   }
   &.is-disabled {
-    color: var(--gray-400);
+    color: #cbd5e0;
   }
 }
 
@@ -557,7 +557,7 @@ export default {
       background-color: hsla(216, 15%, 52%, 0.4);
     }
     &.is-disabled {
-      color: var(--gray-600);
+      color: #718096;
     }
   }
 }

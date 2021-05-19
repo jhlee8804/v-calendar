@@ -280,11 +280,11 @@ export default {
   align-items: center;
   cursor: pointer;
   user-select: none;
-  line-height: var(--leading-snug);
+  line-height: 1.375;
   border-width: 2px;
   border-style: solid;
   border-color: transparent;
-  border-radius: var(--rounded);
+  border-radius: 0.25rem;
   &.is-left {
     margin-right: auto;
   }
@@ -297,7 +297,7 @@ export default {
     cursor: not-allowed;
   }
   &:hover {
-    background-color: var(--gray-900);
+    background-color: #1a202c;
   }
   &:focus {
     border-color: var(--accent-600);
@@ -306,16 +306,16 @@ export default {
 
 .vc-nav-title {
   color: var(--accent-100);
-  font-weight: var(--font-bold);
-  line-height: var(--leading-snug);
+  font-weight: 700;
+  line-height: 1.375;
   padding: 4px 8px;
-  border-radius: var(--rounded);
+  border-radius: 0.25rem;
   border-width: 2px;
   border-style: solid;
   border-color: transparent;
   user-select: none;
   &:hover {
-    background-color: var(--gray-900);
+    background-color: #1a202c;
   }
   &:focus {
     border-color: var(--accent-600);
@@ -332,25 +332,25 @@ export default {
 .vc-nav-item {
   width: 48px;
   text-align: center;
-  line-height: var(--leading-snug);
-  font-weight: var(--font-semibold);
+  line-height: 1.375;
+  font-weight: 600;
   padding: 4px 0;
   cursor: pointer;
   border-color: transparent;
   border-width: 2px;
   border-style: solid;
-  border-radius: var(--rounded);
+  border-radius: 0.25rem;
   user-select: none;
   &:hover {
-    color: var(--white);
-    background-color: var(--gray-900);
-    box-shadow: var(--shadow-inner);
+    color: #ffffff;
+    background-color: #1a202c;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06);
   }
   &.is-active {
     color: var(--accent-900);
     background: var(--accent-100);
-    font-weight: var(--font-bold);
-    box-shadow: var(--shadow);
+    font-weight: 700;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
   }
   &.is-current {
     color: var(--accent-100);
@@ -368,9 +368,9 @@ export default {
 
 .vc-is-dark {
   & .vc-nav-title {
-    color: var(--gray-900);
+    color: #1a202c;
     &:hover {
-      background-color: var(--gray-200);
+      background-color: #edf2f7;
     }
     &:focus {
       border-color: var(--accent-400);
@@ -378,7 +378,7 @@ export default {
   }
   & .vc-nav-arrow {
     &:hover {
-      background-color: var(--gray-200);
+      background-color: #edf2f7;
     }
     &:focus {
       border-color: var(--accent-400);
@@ -386,12 +386,12 @@ export default {
   }
   & .vc-nav-item {
     &:hover {
-      color: var(--gray-900);
-      background-color: var(--gray-200);
+      color: #1a202c;
+      background-color: #edf2f7;
       box-shadow: none;
     }
     &.is-active {
-      color: var(--white);
+      color: #ffffff;
       background: var(--accent-500);
     }
     &.is-current {

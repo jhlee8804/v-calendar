@@ -386,18 +386,19 @@ export default {
   position: relative;
   outline: none;
   z-index: 10;
-  box-shadow: var(--shadow-lg);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);;
   &.direction-bottom {
-    margin-top: var(--popover-vertical-content-offset);
+    margin-top: 10px;
   }
   &.direction-top {
-    margin-bottom: var(--popover-vertical-content-offset);
+    margin-bottom: 10px;
   }
   &.direction-left {
-    margin-right: var(--popover-horizontal-content-offset);
+    margin-right: 8px;
   }
   &.direction-right {
-    margin-left: var(--popover-horizontal-content-offset);
+    margin-left: 8px;
   }
 }
 
@@ -461,22 +462,22 @@ export default {
     }
   }
   &.align-left {
-    left: var(--popover-caret-horizontal-offset);
+    left: 18px;
   }
   &.align-center {
     left: 50%;
   }
   &.align-right {
-    right: var(--popover-caret-horizontal-offset);
+    right: 18px;
   }
   &.align-top {
-    top: var(--popover-caret-vertical-offset);
+    top: 8px;
   }
   &.align-middle {
     top: 50%;
   }
   &.align-bottom {
-    bottom: var(--popover-caret-vertical-offset);
+    bottom: 8px;
   }
 }
 

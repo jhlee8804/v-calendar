@@ -238,9 +238,9 @@ export default {
 }
 
 .vc-title {
-  font-size: var(--text-lg);
-  color: var(--gray-800);
-  font-weight: var(--font-semibold);
+  font-size: 18px;
+  color: #2d3748;
+  font-weight: 600;
   line-height: 28px;
   cursor: pointer;
   user-select: none;
@@ -261,21 +261,21 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--text-xs);
-  font-weight: var(--font-medium);
+  font-size: 12px;
+  font-weight: 500;
   font-style: italic;
   width: 28px;
   height: 28px;
   margin-top: 2px;
-  color: var(--gray-500);
+  color: #a0aec0;
   user-select: none;
   &.is-left-outside {
     position: absolute;
-    left: var(--weeknumber-offset);
+    left: -34px;
   }
   &.is-right-outside {
     position: absolute;
-    right: var(--weeknumber-offset);
+    right: -34px;
   }
 }
 
@@ -297,9 +297,9 @@ export default {
 
 .vc-weekday {
   text-align: center;
-  color: var(--gray-500);
-  font-size: var(--text-sm);
-  font-weight: var(--font-bold);
+  color: #a0aec0;
+  font-size: 14px;
+  font-weight: 700;
   line-height: 14px;
   padding-top: 4px;
   padding-bottom: 8px;
@@ -316,10 +316,10 @@ export default {
 
 .vc-is-dark {
   & .vc-header {
-    color: var(--gray-200);
+    color: #edf2f7;
   }
   & .vc-title {
-    color: var(--gray-100);
+    color: #f7fafc;
   }
   & .vc-weekday {
     color: var(--accent-200);
@@ -329,19 +329,19 @@ export default {
 
 <style>
 .vc-nav-popover-container {
-  color: var(--white);
-  font-size: var(--text-sm);
-  font-weight: var(--font-semibold);
-  background-color: var(--gray-800);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #2d3748;
   border: 1px solid;
-  border-color: var(--gray-700);
-  border-radius: var(--rounded-lg);
+  border-color: #4a5568;
+  border-radius: 0.5rem;
   padding: 4px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 .vc-is-dark .vc-nav-popover-container {
-  color: var(--gray-800);
-  background-color: var(--white);
-  border-color: var(--gray-100);
+  color: #2d3748;
+  background-color: #ffffff;
+  border-color: #f7fafc;
 }
 </style>

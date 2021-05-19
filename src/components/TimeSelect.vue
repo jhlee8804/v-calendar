@@ -37,26 +37,26 @@ export default {
     appearance: none;
     width: 52px;
     height: 30px;
-    font-size: var(--text-base);
-    font-weight: var(--font-medium);
+    font-size: 16px;
+    font-weight: 500;
     text-align: left;
-    background-color: var(--gray-200);
+    background-color: #edf2f7;
     border: 2px solid;
-    border-color: var(--gray-200);
-    color: var(--gray-900);
+    border-color: #edf2f7;
+    color: #1a202c;
     padding: 0 20px 0 8px;
-    border-radius: var(--rounded);
+    border-radius: 0.25rem;
     line-height: var(--leading-tight);
     text-indent: 0px;
     cursor: pointer;
     -moz-padding-start: 3px;
     &:hover {
-      color: var(--gray-600);
+      color: #718096;
     }
     &:focus {
       outline: 0;
       border-color: var(--accent-400);
-      background-color: var(--white);
+      background-color: #ffffff;
     }
   }
 }
@@ -69,7 +69,7 @@ export default {
   bottom: 0;
   right: 0;
   padding: 0 4px 0 0;
-  color: var(--gray-500);
+  color: #a0aec0;
   & svg {
     width: 16px;
     height: 16px;
@@ -78,15 +78,15 @@ export default {
 }
 .vc-is-dark {
   & select {
-    background: var(--gray-700);
-    color: var(--gray-100);
-    border-color: var(--gray-700);
+    background: #4a5568;
+    color: #f7fafc;
+    border-color: #4a5568;
     &:hover {
-      color: var(--gray-400);
+      color: #cbd5e0;
     }
     &:focus {
       border-color: var(--accent-500);
-      background-color: var(--gray-800);
+      background-color: #2d3748;
     }
   }
 }

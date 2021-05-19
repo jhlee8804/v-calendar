@@ -115,10 +115,10 @@ export default class Theme {
       case 'outline':
       case 'none':
         return {
-          backgroundColor: isDark ? 'var(--gray-900)' : 'var(--white)',
+          backgroundColor: isDark ? '#1a202c' : '#ffffff',
           border: '2px solid',
           borderColor: isDark ? `var(--${color}-200)` : `var(--${color}-700)`,
-          borderRadius: 'var(--rounded-full)',
+          borderRadius: '9999px',
         };
       case 'light':
         return {
@@ -126,18 +126,18 @@ export default class Theme {
             ? `var(--${color}-800)`
             : `var(--${color}-200)`,
           opacity: isDark ? 0.75 : 1,
-          borderRadius: 'var(--rounded-full)',
+          borderRadius: '9999px',
         };
       case 'solid':
         return {
           backgroundColor: isDark
             ? `var(--${color}-500)`
             : `var(--${color}-600)`,
-          borderRadius: 'var(--rounded-full)',
+          borderRadius: '9999px',
         };
       default:
         return {
-          borderRadius: 'var(--rounded-full)',
+          borderRadius: '9999px',
         };
     }
   }
@@ -147,18 +147,18 @@ export default class Theme {
       case 'outline':
       case 'none':
         return {
-          fontWeight: 'var(--font-bold)',
+          fontWeight: '700',
           color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
         };
       case 'light':
         return {
-          fontWeight: 'var(--font-bold)',
+          fontWeight: '700',
           color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
         };
       case 'solid':
         return {
-          fontWeight: 'var(--font-bold)',
-          color: 'var(--white)',
+          fontWeight: '700',
+          color: '#ffffff',
         };
       default:
         return '';
@@ -174,7 +174,7 @@ export default class Theme {
   contentAccent({ color, isDark }) {
     if (!color) return null;
     return {
-      fontWeight: 'var(--font-bold)',
+      fontWeight: '700',
       color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
     };
   }

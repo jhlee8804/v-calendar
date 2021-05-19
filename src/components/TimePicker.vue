@@ -227,7 +227,7 @@ export default {
     opacity: 0.5;
   }
   &.vc-bordered {
-    border-top: 1px solid var(--gray-400);
+    border-top: 1px solid #cbd5e0;
   }
 }
 
@@ -243,19 +243,19 @@ export default {
 .vc-time-icon {
   width: 16px;
   height: 16px;
-  color: var(--gray-600);
+  color: #718096;
 }
 
 .vc-date {
   display: flex;
   align-items: center;
-  font-size: var(--text-sm);
-  font-weight: var(--font-semibold);
+  font-size: 14px;
+  font-weight: 600;
   text-transform: uppercase;
   padding: 0 0 4px 4px;
   margin-top: -4px;
   & .vc-weekday {
-    color: var(--gray-700);
+    color: #4a5568;
     letter-spacing: var(--tracking-wide);
   }
   & .vc-month {
@@ -267,7 +267,7 @@ export default {
     margin-left: 4px;
   }
   & .vc-year {
-    color: var(--gray-500);
+    color: #a0aec0;
     margin-left: 8px;
   }
 }
@@ -280,29 +280,29 @@ export default {
 .vc-am-pm {
   display: flex;
   align-items: center;
-  background: var(--gray-200);
+  background: #edf2f7;
   margin-left: 8px;
   padding: 4px;
-  border-radius: var(--rounded);
+  border-radius: 0.25rem;
   height: 30px;
   & button {
-    color: var(--gray-900);
-    font-size: var(--text-sm);
-    font-weight: var(--font-medium);
+    color: #1a202c;
+    font-size: 14px;
+    font-weight: 500;
     padding: 0 4px;
     background: transparent;
     border: 2px solid transparent;
-    border-radius: var(--rounded);
-    line-height: var(--leading-snug);
+    border-radius: 0.25rem;
+    line-height: 1.375;
     &:hover {
-      color: var(--gray-600);
+      color: #718096;
     }
     &:focus {
       border-color: var(--accent-400);
     }
     &.active {
       background: var(--accent-600);
-      color: var(--white);
+      color: #ffffff;
       &:hover {
         background: var(--accent-500);
       }
@@ -315,13 +315,13 @@ export default {
 
 .vc-is-dark {
   & .vc-time-picker {
-    border-color: var(--gray-700);
+    border-color: #4a5568;
   }
   & .vc-time-icon {
-    color: var(--gray-400);
+    color: #cbd5e0;
   }
   & .vc-weekday {
-    color: var(--gray-400);
+    color: #cbd5e0;
   }
   & .vc-month {
     color: var(--accent-400);
@@ -330,24 +330,24 @@ export default {
     color: var(--accent-400);
   }
   & .vc-year {
-    color: var(--gray-500);
+    color: #a0aec0;
   }
   & .vc-am-pm {
-    background: var(--gray-700);
+    background: #4a5568;
     &:focus {
       border-color: var(--accent-500);
     }
     & button {
-      color: var(--gray-100);
+      color: #f7fafc;
       &:hover {
-        color: var(--gray-400);
+        color: #cbd5e0;
       }
       &:focus {
         border-color: var(--accent-500);
       }
       &.active {
         background: var(--accent-500);
-        color: var(--white);
+        color: #ffffff;
         &:hover {
           background: var(--accent-600);
         }

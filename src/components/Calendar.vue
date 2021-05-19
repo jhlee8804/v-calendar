@@ -832,16 +832,16 @@ export default {
   cursor: pointer;
   user-select: none;
   pointer-events: auto;
-  color: var(--gray-600);
+  color: #718096;
   border-width: 2px;
   border-style: solid;
-  border-radius: var(--rounded);
+  border-radius: 0.25rem;
   border-color: transparent;
   &:hover {
-    background: var(--gray-200);
+    background: #edf2f7;
   }
   &:focus {
-    border-color: var(--gray-300);
+    border-color: #e2e8f0;
   }
 
   &.is-disabled {
@@ -852,21 +852,21 @@ export default {
 }
 
 .vc-day-popover-container {
-  color: var(--white);
-  background-color: var(--gray-800);
+  color: #ffffff;
+  background-color: #2d3748;
   border: 1px solid;
-  border-color: var(--gray-700);
-  border-radius: var(--rounded);
-  font-size: var(--text-xs);
-  font-weight: var(--font-medium);
+  border-color: #4a5568;
+  border-radius: 0.25rem;
+  font-size: 12px;
+  font-weight: 500;
   padding: 4px 8px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
 .vc-day-popover-header {
-  font-size: var(--text-xs);
-  color: var(--gray-300);
-  font-weight: var(--font-semibold);
+  font-size: 12px;
+  color: #e2e8f0;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -888,21 +888,21 @@ export default {
 
 .vc-is-dark {
   & .vc-arrow {
-    color: var(--white);
+    color: #ffffff;
     &:hover {
-      background: var(--gray-800);
+      background: #2d3748;
     }
     &:focus {
-      border-color: var(--gray-700);
+      border-color: #4a5568;
     }
   }
   & .vc-day-popover-container {
-    color: var(--gray-800);
-    background-color: var(--white);
-    border-color: var(--gray-100);
+    color: #2d3748;
+    background-color: #ffffff;
+    border-color: #f7fafc;
   }
   & .vc-day-popover-header {
-    color: var(--gray-700);
+    color: #4a5568;
   }
 }
 </style>
