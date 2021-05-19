@@ -163,15 +163,15 @@
   }
 
   &.vc-blue {
-    --accent-100: var(--blue-100);
-    --accent-200: var(--blue-200);
-    --accent-300: var(--blue-300);
-    --accent-400: var(--blue-400);
-    --accent-500: var(--blue-500);
-    --accent-600: var(--blue-600);
-    --accent-700: var(--blue-700);
-    --accent-800: var(--blue-800);
-    --accent-900: var(--blue-900);
+    --accent-100: #ebf8ff;
+    --accent-200: #bee3f8;
+    --accent-300: #90cdf4;
+    --accent-400: #63b3ed;
+    --accent-500: #4299e1;
+    --accent-600: #3182ce;
+    --accent-700: #2b6cb0;
+    --accent-800: #2c5282;
+    --accent-900: #2a4365;
   }
 
   &.vc-indigo {

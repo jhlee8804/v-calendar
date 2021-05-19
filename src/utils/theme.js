@@ -111,28 +111,29 @@ export default class Theme {
   }
 
   getHighlightBgStyle({ fillMode, color, isDark }) {
+    const _color = color;
     switch (fillMode) {
       case 'outline':
       case 'none':
         return {
           backgroundColor: isDark ? '#1a202c' : '#ffffff',
           border: '2px solid',
-          borderColor: isDark ? `var(--${color}-200)` : `var(--${color}-700)`,
+          borderColor: isDark ? '#bee3f8' : '#2b6cb0',
           borderRadius: '9999px',
         };
       case 'light':
         return {
           backgroundColor: isDark
-            ? `var(--${color}-800)`
-            : `var(--${color}-200)`,
+            ? '#2c5282'
+            : '#bee3f8',
           opacity: isDark ? 0.75 : 1,
           borderRadius: '9999px',
         };
       case 'solid':
         return {
           backgroundColor: isDark
-            ? `var(--${color}-500)`
-            : `var(--${color}-600)`,
+            ? '#4299e1'
+            : '#3182ce',
           borderRadius: '9999px',
         };
       default:
@@ -143,17 +144,18 @@ export default class Theme {
   }
 
   getHighlightContentStyle({ fillMode, color, isDark }) {
+    const _color = color;
     switch (fillMode) {
       case 'outline':
       case 'none':
         return {
           fontWeight: '700',
-          color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
+          color: isDark ? '#ebf8ff' : '#2a4365',
         };
       case 'light':
         return {
           fontWeight: '700',
-          color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
+          color: isDark ? '#ebf8ff' : '#2a4365',
         };
       case 'solid':
         return {
@@ -166,16 +168,17 @@ export default class Theme {
   }
 
   bgAccentHigh({ color, isDark }) {
+    const _color = color;
     return {
-      backgroundColor: isDark ? `var(--${color}-500)` : `var(--${color}-600)`,
+      backgroundColor: isDark ? '#4299e1' : '#3182ce',
     };
   }
 
   contentAccent({ color, isDark }) {
-    if (!color) return null;
+    const _color = color;
     return {
       fontWeight: '700',
-      color: isDark ? `var(--${color}-100)` : `var(--${color}-900)`,
+      color: isDark ? '#ebf8ff' : '#2a4365',
     };
   }
 
