@@ -55,8 +55,8 @@ export default {
 .slide-up-leave-active,
 .slide-down-enter-active,
 .slide-down-leave-active {
-  transition: transform var(--slide-duration) var(--slide-timing),
-    opacity var(--slide-duration) var(--slide-timing);
+  transition: transform 0.15s ease,
+    opacity 0.15s ease;
   backface-visibility: hidden;
 }
 
@@ -87,21 +87,21 @@ export default {
 
 .slide-left-enter,
 .slide-right-leave-to {
-  transform: translateX(var(--slide-translate));
+  transform: translateX(22px);
 }
 
 .slide-right-enter,
 .slide-left-leave-to {
-  transform: translateX(calc(-1 * var(--slide-translate)));
+  transform: translateX(calc(-1 * 22px));
 }
 
 .slide-up-enter,
 .slide-down-leave-to {
-  transform: translateY(var(--slide-translate));
+  transform: translateY(22px);
 }
 
 .slide-down-enter,
 .slide-up-leave-to {
-  transform: translateY(calc(-1 * var(--slide-translate)));
+  transform: translateY(calc(-1 * 22px));
 }
 </style>

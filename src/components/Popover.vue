@@ -366,13 +366,6 @@ export default {
 
 <style lang="postcss" scoped>
 .vc-popover-content-wrapper {
-  --popover-horizontal-content-offset: 8px;
-  --popover-vertical-content-offset: 10px;
-  --popover-slide-translation: 15px;
-  --popover-transition-time: 0.14s ease-in-out;
-  --popover-caret-horizontal-offset: 18px;
-  --popover-caret-vertical-offset: 8px;
-
   position: absolute;
   display: block;
   outline: none;
@@ -481,11 +474,12 @@ export default {
   }
 }
 
+/* IE11에서 애니메이션 재생이 제대로 안되서 반투명 상태로 보임.
 .fade-enter-active,
 .fade-leave-active,
 .slide-fade-enter-active,
 .slide-fade-leave-active {
-  transition: all var(--popover-transition-time);
+  transition: all 0.14s ease-in-out;
   pointer-events: none;
 }
 
@@ -498,16 +492,16 @@ export default {
 .slide-fade-leave-to {
   opacity: 0;
   &.direction-bottom {
-    transform: translateY(calc(-1 * var(--popover-slide-translation)));
+    transform: translateY(calc(-1 * 15px));
   }
   &.direction-top {
-    transform: translateY(var(--popover-slide-translation));
+    transform: translateY(15px);
   }
   &.direction-left {
-    transform: translateX(var(--popover-slide-translation));
+    transform: translateX(15px);
   }
   &.direction-right {
-    transform: translateX(calc(-1 * var(--popover-slide-translation)));
+    transform: translateX(calc(-1 * 15px));
   }
-}
+} */
 </style>

@@ -600,7 +600,7 @@ export default {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  transition: all var(--day-content-transition-time);
+  transition: all 0.13s ease-in;
   &:not(:last-child) {
     margin-right: 3px;
   }
@@ -616,6 +616,6 @@ export default {
 .vc-bar {
   flex-grow: 1;
   height: 3px;
-  transition: all var(--day-content-transition-time);
+  transition: all 0.13s ease-in;
 }
 </style>
