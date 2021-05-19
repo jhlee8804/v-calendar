@@ -305,6 +305,13 @@ export default {
   padding-bottom: 8px;
   cursor: default;
   user-select: none;
+  grid-row: 1;
+}
+
+@for $i from 1 to 7 {
+  .vc-weekday:nth-child($i) {
+    grid-column: $i;
+  }
 }
 
 .vc-is-dark {

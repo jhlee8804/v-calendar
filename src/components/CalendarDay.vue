@@ -443,6 +443,51 @@ export default {
   }
 }
 
+/* 1~7까진 vc-weekday이므로 8부터 시작해야 한다. */
+/* postcss-for 문법 내에서 복잡한 연산은 지원하지 않으므로 약간의 반복 작업이 필요 */
+@for $i from 8 to 14 {
+  .vc-day:nth-child($i) {
+    -ms-grid-column: calc($i - 7);
+    grid-column: calc($i - 7);
+    grid-row: 2;
+  }
+}
+@for $i from 15 to 21 {
+  .vc-day:nth-child($i) {
+    -ms-grid-column: calc($i - 14);
+    grid-column: calc($i - 14);
+    grid-row: 3;
+  }
+}
+@for $i from 22 to 28 {
+  .vc-day:nth-child($i) {
+    -ms-grid-column: calc($i - 21);
+    grid-column: calc($i - 21);
+    grid-row: 4;
+  }
+}
+@for $i from 29 to 35 {
+  .vc-day:nth-child($i) {
+    -ms-grid-column: calc($i - 28);
+    grid-column: calc($i - 28);
+    grid-row: 5;
+  }
+}
+@for $i from 36 to 42 {
+  .vc-day:nth-child($i) {
+    -ms-grid-column: calc($i - 35);
+    grid-column: calc($i - 35);
+    grid-row: 6;
+  }
+}
+@for $i from 43 to 49 {
+  .vc-day:nth-child($i) {
+    -ms-grid-column: calc($i - 42);
+    grid-column: calc($i - 42);
+    grid-row: 7;
+  }
+}
+
 .vc-day-layer {
   position: absolute;
   left: 0;
